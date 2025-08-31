@@ -96,7 +96,29 @@ class Asus(Laptop):
         super().__init__(name,  brand , price,ram,cpu)
         self.group += "asus"
 
+class Acer(Laptop):
+    def __init__(self, name,  brand , price,ram,cpu):
+        super().__init__(name,  brand , price,ram,cpu)
+        self.group += "acer"
 
+
+class Samsung(Mobile):
+    def __init__(self, name, brand, price, inch):
+        super().__init__( name,  brand , price,inch)
+        self.group += "samsung"
+
+
+class Iphone(Mobile):
+    def __init__(self, name, brand, price, inch):
+        super().__init__( name,  brand , price,inch)
+        self.group += "Iphone"
+
+samsung_mob=Samsung("a22","s",200,13)
+print(samsung_mob)
+iphone_mob=Iphone("13","promax",200,13)
+print(iphone_mob)
 asus_laptop=Asus("surface","pro",200,8,7)
 print(asus_laptop)
+acer_laptop= Acer ("del","a22",100,6,7)
+print(acer_laptop)
 
