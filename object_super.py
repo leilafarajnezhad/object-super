@@ -91,3 +91,12 @@ class Cream(Health,):
         self.group += "cream"
 
 
+class Asus(Laptop):
+    def __init__(self, name,  brand , price,ram,cpu):
+        super().__init__(name,  brand , price,ram,cpu)
+        self.group += "asus"
+
+
+asus_laptop=Asus("surface","pro",200,8,7)
+print(asus_laptop)
+
